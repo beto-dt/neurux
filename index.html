@@ -1,0 +1,478 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Neurux — Leading digital agency</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="preload"
+      href="//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Light.woff2"
+      as="font"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Regular.woff2"
+      as="font"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Semibold.woff2"
+      as="font"
+      crossorigin=""
+    />
+
+    <style id="smooth-scrollbar-style">
+      [data-scrollbar] {
+        display: block;
+        position: relative;
+      }
+
+      .scroll-content {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+
+      .scrollbar-track {
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        background: rgba(222, 222, 222, 0.75);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: opacity 0.5s 0.5s ease-out;
+        transition: opacity 0.5s 0.5s ease-out;
+      }
+      .scrollbar-track.show,
+      .scrollbar-track:hover {
+        opacity: 1;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+      }
+
+      .scrollbar-track-x {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 8px;
+      }
+      .scrollbar-track-y {
+        top: 0;
+        right: 0;
+        width: 8px;
+        height: 100%;
+      }
+      .scrollbar-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+      }
+    </style>
+  
+  </head>
+
+  <body>
+    <nav class="cb-menu">
+      <div class="cb-menu-logo">
+        <a href="/">                     
+          <a href="/" ><img src="./img/logo.png" alt=""></a>
+      </a>
+      </div>
+    
+    </nav>
+    <div class="cb-view" data-controller="homeController" id="view-main">
+      <canvas
+        class="cb-scene"
+        width="2086"
+        height="1810"
+        style="width: 1043px; height: 905px"
+      ></canvas>
+      <div
+        class="cb-layout"
+        role="main"
+        data-scrollbar="true"
+        tabindex="-1"
+        style="overflow: hidden; outline: none"
+      >
+        <div class="scroll-content">
+          <div class="cb-navbar">
+            <div class="cb-navbar-strip">
+              <div class="cb-navbar-grid">
+                <div class="cb-navbar-grid-col -left">
+                  <div class="cb-navbar-logo">
+                    <a href="/" ><img  src="./img/logo.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="cb-navbar-grid-col -right">
+                  <div class="cb-navbar-link">
+                    <button class="cb-btn cb-btn_nav">
+                      <span>our showreel</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <header class="cb-hero">
+            <div class="cb-hero-content">
+              <div class="cb-hero-body">
+                <div class="cb-hero-container">
+                  <div class="cb-hero-grid">
+                    <div class="cb-hero-grid-col -left">
+                      <div class="cb-hero-video">
+                        <video preload="auto" loop="" muted="" playsinline="">
+                          <source
+                            src="//cdn.cuberto.com/cb/video/hero/0.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                    <div class="cb-hero-grid-col -right">
+                      <div class="cb-hero-header">
+                        <h1
+                          style="
+                            transform: translate(0px, 0%);
+                            will-change: transform;
+                          "
+                        >
+                          We make it happen
+                        </h1>
+                      </div>
+                      <div class="cb-hero-nav">
+                        <div
+                          class="cb-hero-nav-item"
+                          data-video-src="//cdn.cuberto.com/cb/video/hero/1.mp4"
+                        >
+                          <div class="cb-hero-nav-item-spacer"></div>
+                          <a
+                            href="/services/digital/"
+                            style="will-change: transform"
+                            ><span
+                              style="
+                                transform: translate(0px, 0%);
+                                will-change: transform;
+                              "
+                              >Websites</span
+                            ></a
+                          >
+                        </div>
+                        <div
+                          class="cb-hero-nav-item"
+                          data-video-src="//cdn.cuberto.com/cb/video/hero/2.mp4"
+                        >
+                          <div class="cb-hero-nav-item-spacer"></div>
+                          <a
+                            href="/services/mobile/"
+                            style="will-change: transform"
+                            ><span class="-lg">Apps</span
+                            ><span
+                              class="-sm"
+                              style="
+                                transform: translate(0px, 0%);
+                                will-change: transform;
+                              "
+                              >Applications</span
+                            ></a
+                          >
+                        </div>
+                        <div
+                          class="cb-hero-nav-item"
+                          data-video-src="//cdn.cuberto.com/cb/video/hero/3.mp4?2"
+                        >
+                          <div class="cb-hero-nav-item-spacer"></div>
+                          <a
+                            href="/services/branding/"
+                            style="will-change: transform"
+                            ><span
+                              style="
+                                transform: translate(0px, 0%);
+                                will-change: transform;
+                              "
+                              >Branding</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="cb-hero-footer"
+                style="transform: translate(0px, 0%); will-change: transform"
+              >
+                <div class="cb-hero-container">
+                  <div class="cb-hero-text">
+                    <p>
+                      Leading digital agency with solid design and development
+                      expertise. We build readymade websites, mobile
+                      applications, and elaborate online business services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="cb-featured">
+            <div class="cb-featured-content">
+              <div class="cb-featured-container">
+                <div class="cb-featured-header">
+                  <h2>Featured <span>projects</span></h2>
+                </div>
+                <div class="cb-featured-items">
+                  <div
+                    class="cb-featured-item"
+                    data-project="flipaclip"
+                    data-project-bg="#fee6ec"
+                    data-cursor="-color-flipaclip"
+                  >
+                    <div class="cb-featured-item-grid">
+                      <div class="cb-featured-item-grid-col -right">
+                        <a
+                          class="cb-featured-item-img"
+                          href="/projects/flipaclip/"
+                          aria-label="FlipaClip"
+                          ><picture
+                            ><source
+                              srcset="
+                                //cdn.cuberto.com/cb/img/flipaclip/cover.png,
+                                //cdn.cuberto.com/cb/img/flipaclip/cover@2x.png 2x
+                              "
+                              media="(max-width:1199px)" />
+                            <img
+                              src="//cdn.cuberto.com/cb/img/flipaclip/face.jpg"
+                              srcset="
+                                //cdn.cuberto.com/cb/img/flipaclip/face@2x.jpg 2x
+                              "
+                              loading="lazy"
+                              alt="" /></picture
+                        ></a>
+                      </div>
+                  
+                      <div class="cb-featured-item-grid-col -left">
+                        <div class="cb-featured-item-header">
+                          <h3>FlipaClip</h3>
+                        </div>
+                        <div class="cb-featured-item-text">
+                          <p style="transform: translate(0px, 20px)">
+                            The best tool for frame-
+                          </p>
+                          <p style="transform: translate(0px, 20px)">
+                            by-frame animation
+                          </p>
+                        </div>
+                        <div class="cb-featured-item-tags">
+                          <p style="transform: translate(0px, 40px)">
+                            web, development, product
+                          </p>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                  <div
+                    class="cb-featured-item"
+                    data-project="ferrumpipe"
+                    data-project-bg="#ebf9f4"
+                    data-cursor="-color-ferrumpipe"
+                  >
+                    <div class="cb-featured-item-grid">
+                      <div class="cb-featured-item-grid-col -right">
+                        <a
+                          class="cb-featured-item-img"
+                          href="/projects/ferrumpipe/"
+                          aria-label="Ferrumpipe"
+                          ><picture
+                            ><source
+                              srcset="
+                                //cdn.cuberto.com/cb/img/ferrumpipe/cover.png,
+                                //cdn.cuberto.com/cb/img/ferrumpipe/cover@2x.png 2x
+                              "
+                              media="(max-width:1199px)" />
+                            <img
+                              src="//cdn.cuberto.com/cb/img/ferrumpipe/face.jpg"
+                              srcset="
+                                //cdn.cuberto.com/cb/img/ferrumpipe/face@2x.jpg 2x
+                              "
+                              loading="lazy"
+                              alt="" /></picture
+                        ></a>
+                      </div>
+                      <div class="cb-featured-item-grid-col -left">
+                        <div class="cb-featured-item-header">
+                          <h3>Ferrumpipe</h3>
+                        </div>
+                        <div class="cb-featured-item-text">
+                          <p style="transform: translate(0px, 20px)">
+                            Galvanized steel metal
+                          </p>
+                          <p style="transform: translate(0px, 20px)">
+                            frame manufacturer
+                          </p>
+                        </div>
+                        <div class="cb-featured-item-tags">
+                          <p style="transform: translate(0px, 40px)">
+                            branding, design, development, product
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+              </div>
+        
+            </div>
+          </section>
+       
+       
+          <section class="cb-outro">
+            <div
+              class="cb-outro-content"
+              data-cursor="-inverse"
+              style="transform: translate(0px, 0%); will-change: transform"
+            >
+              <div class="cb-outro-body">
+                <div class="cb-outro-container">
+                  <div class="cb-outro-header">
+                    <h2>Have an idea?</h2>
+                    <a href="#">Tell us about it</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cb-outro-footer">
+                <div class="cb-outro-container">
+                  <div class="cb-outro-grid">
+                    <div class="cb-outro-grid-col -left">
+                      <div class="cb-outro-mail">
+                        <a href="mailto:#"
+                          ><em><span>example@example.com</span></em></a
+                        >
+                      </div>
+                      <div class="cb-outro-address">
+                        <address>
+                          <p>901 N Pitt Str., Suite 170</p>
+                          <p>Alexandria, VA 22314, USA</p>
+                        </address>
+                      </div>
+                      <div class="cb-outro-link">
+                        <a class="cb-outro-link-item" href="/privacy/"
+                          >Privacy Policy</a
+                        >
+                      </div>
+                    </div>
+                    <div class="cb-outro-grid-col -right">
+                      <div class="cb-outro-social">
+                        <div class="cb-outro-social-row">
+                          <a
+                            class="cb-outro-social-item"
+                            href="//www.linkedin.com/company/cuberto"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="LinkedIn"
+                            ><span class="cb-outro-social-item-title"
+                              ><span data-text="LinkedIn">LinkedIn</span></span
+                            ><svg class="cb-svgsprite -linkedin">
+                              <use
+                                xlink:href="/assets/img/sprites/svgsprites.svg?2#linkedin"
+                              ></use></svg></a
+                          ><a
+                            class="cb-outro-social-item -patreon"
+                            href="//twitter.com/cuberto"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Twitter"
+                            ><span class="cb-outro-social-item-title"
+                              ><span data-text="Twitter">Twitter</span></span
+                            ><svg class="cb-svgsprite -twitter">
+                              <use
+                                xlink:href="/assets/img/sprites/svgsprites.svg?2#twitter"
+                              ></use></svg></a
+                          ><a
+                            class="cb-outro-social-item -behance"
+                            href="//www.behance.net/cuberto"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Behance"
+                            ><span class="cb-outro-social-item-title"
+                              ><span data-text="Behance">Behance</span></span
+                            ><svg class="cb-svgsprite -behance">
+                              <use
+                                xlink:href="/assets/img/sprites/svgsprites.svg?2#behance"
+                              ></use></svg
+                          ></a>
+                        </div>
+                        <div class="cb-outro-social-row">
+                          <a
+                            class="cb-outro-social-item -dribble"
+                            href="//dribbble.com/cuberto"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Dribbble"
+                            ><span class="cb-outro-social-item-title"
+                              ><span data-text="Dribbble">Dribbble</span></span
+                            ><svg class="cb-svgsprite -dribbble">
+                              <use
+                                xlink:href="/assets/img/sprites/svgsprites.svg?2#dribbble"
+                              ></use></svg></a
+                          ><a
+                            class="cb-outro-social-item -instagram"
+                            href="//www.instagram.com/cubertodesign/"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Instagram"
+                            ><span class="cb-outro-social-item-title"
+                              ><span data-text="Instagram"
+                                >Instagram</span
+                              ></span
+                            ><svg class="cb-svgsprite -instagram">
+                              <use
+                                xlink:href="/assets/img/sprites/svgsprites.svg?2#instagram"
+                              ></use></svg></a
+                          ><a
+                            class="cb-outro-social-item -youtube"
+                            href="//www.youtube.com/channel/UCzestFrXpwSGCfcbO2pObwQ"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="YouTube"
+                            ><span class="cb-outro-social-item-title"
+                              ><span data-text="YouTube">YouTube</span></span
+                            ><svg class="cb-svgsprite -youtube">
+                              <use
+                                xlink:href="/assets/img/sprites/svgsprites.svg?2#youtube"
+                              ></use></svg
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="scrollbar-track scrollbar-track-x" style="display: none">
+          <div
+            class="scrollbar-thumb scrollbar-thumb-x"
+            style="width: 1043px; transform: translate3d(0px, 0px, 0px)"
+          ></div>
+        </div>
+        <div class="scrollbar-track scrollbar-track-y" style="display: block">
+          <div
+            class="scrollbar-thumb scrollbar-thumb-y"
+            style="height: 122.279px; transform: translate3d(0px, 0px, 0px)"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bundle.js" defer=""></script>
+  </body>
+</html>
